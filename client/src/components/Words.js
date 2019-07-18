@@ -26,8 +26,6 @@ const Words = ({ word: { words, word, loading }, getWords }) => {
             </div>
           </div>
           <div className='right-area'>
-            <WordForm />
-
             {!word ? <h1>select word</h1> : <Word />}
           </div>
         </div>
