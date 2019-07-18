@@ -18,7 +18,6 @@ const Words = ({ word: { words, word, loading }, getWords }) => {
       ) : (
         <div className='grid'>
           <div className='navbar'>
-            <h1 id='logo'>MyDic</h1>
             <div className='word-item'>
               {words.map(word => (
                 <WordItem key={word._id} word={word} />
