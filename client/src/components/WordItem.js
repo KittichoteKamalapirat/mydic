@@ -6,8 +6,10 @@ import { connect } from 'react-redux';
 const WordItem = ({ word: { word, _id }, getWord, deleteWord }) => {
   return (
     <div class='each-item'>
-      <button onClick={e => getWord(_id)}>{word}</button>
-      <button class='remove-word' onClick={e => deleteWord(_id)}>
+      <button className='word' onClick={e => getWord(_id)}>
+        {word}
+      </button>
+      <button className='remove-word' onClick={e => deleteWord(_id)}>
         +
       </button>
     </div>
