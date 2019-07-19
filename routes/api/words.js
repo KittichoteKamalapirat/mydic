@@ -33,7 +33,7 @@ router.post('/', async (req, res) => {
       async (error, response, html) => {
         if (!error && response.statusCode === 200) {
           const $ = cheerio.load(html);
-          const dict = $('.css-996xur').each((index, value) => {
+          const dict = $('.css-8ndocq').each((index, value) => {
             let speech = $(value)
               .find('h3.css-sdwj8v')
               .text()
