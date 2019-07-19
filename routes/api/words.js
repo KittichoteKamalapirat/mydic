@@ -36,7 +36,8 @@ router.post('/', async (req, res) => {
           const dict = $('.css-996xur').each((index, value) => {
             let speech = $(value)
               .find('h3.css-sdwj8v')
-              .text();
+              .text()
+              .substring(0, 4);
             if (/\s/.test(speech)) {
               speech = speech.substring(0, 4);
             }
