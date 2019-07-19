@@ -68,7 +68,7 @@ router.post('/', async (req, res) => {
                 $(value)
                   .find('.e1q3nk1v3')
                   .each((index, value) => {
-                    newWord.dict.ådverb.push($(value).text());
+                    newWord.dict.adverb.push($(value).text());
                   });
                 break;
               case 'Idio':
