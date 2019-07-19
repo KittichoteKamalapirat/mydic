@@ -3,8 +3,7 @@ const Schema = mongoose.Schema;
 const WordSchema = new Schema({
   word: {
     type: String,
-    required: true,
-    unique: true
+    required: true
   },
   dict: {
     noun: {
