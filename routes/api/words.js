@@ -38,7 +38,7 @@ router.post('/', async (req, res) => {
               .find('h3.css-sdwj8v')
               .text();
             if (/\s/.test(speech)) {
-              speech = speech.split(' ')[0];
+              speech = speech.substring(0, 4);
             }
             console.log(speech);
             switch (speech) {
@@ -56,21 +56,21 @@ router.post('/', async (req, res) => {
                     newWord.dict.verb.push($(value).text());
                   });
                 break;
-              case 'adjective':
+              case 'adje':
                 $(value)
                   .find('.e1q3nk1v3')
                   .each((index, value) => {
                     newWord.dict.adjective.push($(value).text());
                   });
                 break;
-              case 'adverb':
+              case 'adve':
                 $(value)
                   .find('.e1q3nk1v3')
                   .each((index, value) => {
                     newWord.dict.ådverb.push($(value).text());
                   });
                 break;
-              case 'Idioms':
+              case 'Idio':
                 $(value)
                   .find('.e1q3nk1v3')
                   .each((index, value) => {
